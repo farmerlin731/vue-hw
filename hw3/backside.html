@@ -87,7 +87,7 @@
                                     </div>
                                 </div>
 
-                                <div v-if="tmpProd.imagesUrl.length != 0" class="mb-2">
+                                <div v-if="tmpProd.imagesUrl?.length != 0" class="mb-2">
                                     <h5>附加圖片</h5>
                                     <div class="mb-5 "v-for="(url,key) in tmpProd.imagesUrl" :key="key">
                                         <label for="imageUrl" class="form-label">附圖 {{key+1}} - 圖片網址：</label>
