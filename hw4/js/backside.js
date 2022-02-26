@@ -3,6 +3,8 @@ import { createApp } from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.0.9/vue.
 let prodModal = null;
 let delModal = null;
 
+
+
 const app = createApp({
     data() {
         return {
@@ -78,7 +80,7 @@ const app = createApp({
 
         openModal(type, item) {
             // this.tmpProd = item ? { ...item } : { ...this.fakeData };
-            this.tmpProd = item ? { ...item } : { imagesUrl: [], };
+            this.tmpProd = item ? { imagesUrl: [], ...item } : {imagesUrl: [],};
             if (type == 'add') {
                 this.isNew = true;
                 prodModal.show();

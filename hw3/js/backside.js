@@ -70,7 +70,7 @@ createApp({
         },
         openModal(type, item) {
             // this.tmpProd = item ? { ...item } : { ...this.fakeData };
-            this.tmpProd = item ? { ...item } : {imagesUrl: [],};
+            this.tmpProd = item ? { imagesUrl: [], ...item } : {imagesUrl: [],};
 
             if (type == 'add') {
                 this.isNew = true;
